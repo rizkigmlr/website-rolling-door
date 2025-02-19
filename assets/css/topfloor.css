@@ -15185,6 +15185,28 @@ html.lenis {
 }
 
 
+.service-title {
+  font-size: 2rem;
+  font-weight: bold;  /* Make text bold */
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  font-size: 1.2rem;
+  font-weight: bold;  /* Make text bold */
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.service-info {
+  font-size: 1.1rem;
+  font-weight: bold;  /* Make text bold */
+  color: #777;
+  line-height: 1.6;
+}
+
+
 
 /*--------------------------------------------------------------
 # End
