@@ -53,23 +53,21 @@
   gtag('config', 'AW-18398051610');
 </script>
 
-<!-- Google Ads conversion tracking -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+    <!-- Event snippet for Kontak conversion -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18398051610/9XnTCJGS0ewcEJr678RE',
+        'event_callback': callback
+      });
+      return false;
     }
-  };
-
-  gtag('event', 'conversion', {
-    'send_to': 'AW-18398051610/9XnTCGsEOwcEUr678RE',
-    'event_callback': callback
-  });
-
-  return false;
-}
-</script>
+    </script>
 </head>
 
 <body>
@@ -177,7 +175,7 @@ url("assets/images/backgrounds/slider-3-1.jpg") center/cover no-repeat}
 
 <div class="rja-topbar">
   <div class="rja-topbar-inner">
-    <div class="rja-top-item"><i class="fas fa-phone-alt"></i><a href="tel:082119395090">082119395090</a></div>
+    <div class="rja-top-item"><i class="fas fa-phone-alt"></i><a onclick="return gtag_report_conversion('tel:082119395090');" href="tel:082119395090">082119395090</a></div>
     <div class="rja-top-item"><i class="fas fa-envelope"></i><a href="mailto:rizkyjayaabadi10@gmail.com">rizkyjayaabadi10@gmail.com</a></div>
   </div>
 </div>
@@ -193,7 +191,7 @@ url("assets/images/backgrounds/slider-3-1.jpg") center/cover no-repeat}
       <a href="#tentang">Tentang Kami</a>
       <a href="#layanan">Layanan</a>
       <a href="#project">Project</a>
-      <a class="rja-nav-cta" href="https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20konsultasi%20rolling%20door." onclick="return gtag_report_conversion(this.href);">WhatsApp</a>
+      <a class="rja-nav-cta" onclick="return gtag_report_conversion('https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20konsultasi%20rolling%20door.');" href="https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20konsultasi%20rolling%20door.">WhatsApp</a>
     </div>
   </nav>
 </header>
@@ -205,8 +203,8 @@ url("assets/images/backgrounds/slider-3-1.jpg") center/cover no-repeat}
     <h1>Rolling Door Rapi.<br><span>Service Cepat.</span><br>Solusi Aman.</h1>
     <p>Kami melayani pasang baru, perbaikan dan service rolling door, folding gate, serta kebutuhan keamanan lainnya dengan pengerjaan yang rapi dan respons cepat.</p>
     <div class="rja-actions">
-      <a class="rja-btn rja-btn-red" href="https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20tanya%20harga%20rolling%20door." onclick="return gtag_report_conversion(this.href);"><i class="fab fa-whatsapp"></i> Tanya via WhatsApp</a>
-      <a class="rja-btn rja-btn-light" href="tel:082119395090" onclick="return gtag_report_conversion(this.href);"><i class="fas fa-phone-alt"></i> Hubungi Sekarang</a>
+      <a class="rja-btn rja-btn-red" onclick="return gtag_report_conversion('https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20tanya%20harga%20rolling%20door.');" href="https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20tanya%20harga%20rolling%20door."><i class="fab fa-whatsapp"></i> Tanya via WhatsApp</a>
+      <a class="rja-btn rja-btn-light" onclick="return gtag_report_conversion('tel:082119395090');" href="tel:082119395090"><i class="fas fa-phone-alt"></i> Hubungi Sekarang</a>
     </div>
     <div class="rja-trust">
       <span><i class="fas fa-check-circle"></i> Pasang Baru</span>
@@ -235,7 +233,7 @@ url("assets/images/backgrounds/slider-3-1.jpg") center/cover no-repeat}
       <h3 style="font-size:30px;margin:0 0 14px">Tidak perlu bingung mencari teknisi.</h3>
       <p class="rja-lead" style="margin:0">Ceritakan kebutuhan Anda melalui WhatsApp atau telepon. Kami bantu arahkan pilihan layanan yang sesuai sebelum pekerjaan dilakukan.</p>
       <div style="margin-top:24px">
-        <a class="rja-btn rja-btn-red" href="https://wa.me/6282119395090?text=Halo,%20saya%20ingin%20konsultasi%20rolling%20door." onclick="return gtag_report_conversion(this.href);"><i class="fab fa-whatsapp"></i> Konsultasi Gratis</a>
+        <a class="rja-btn rja-btn-red" onclick="return gtag_report_conversion('https://wa.me/6282119395090?text=Halo,%20saya%20ingin%20konsultasi%20rolling%20door.');" href="https://wa.me/6282119395090?text=Halo,%20saya%20ingin%20konsultasi%20rolling%20door."><i class="fab fa-whatsapp"></i> Konsultasi Gratis</a>
       </div>
     </div>
   </div>
@@ -295,8 +293,8 @@ url("assets/images/backgrounds/slider-3-1.jpg") center/cover no-repeat}
       <p>Hubungi melalui WhatsApp atau telepon untuk konsultasi dan informasi lebih lanjut.</p>
     </div>
     <div class="rja-actions">
-      <a class="rja-btn rja-btn-red" href="https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20konsultasi." onclick="return gtag_report_conversion(this.href);"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a class="rja-btn rja-btn-light" href="tel:082119395090" onclick="return gtag_report_conversion(this.href);"><i class="fas fa-phone-alt"></i> 082119395090</a>
+      <a class="rja-btn rja-btn-red" onclick="return gtag_report_conversion('https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20konsultasi.');" href="https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20konsultasi."><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a class="rja-btn rja-btn-light" onclick="return gtag_report_conversion('tel:082119395090');" href="tel:082119395090"><i class="fas fa-phone-alt"></i> 082119395090</a>
     </div>
   </div>
 </section>
@@ -308,7 +306,7 @@ url("assets/images/backgrounds/slider-3-1.jpg") center/cover no-repeat}
     <div class="rja-contact-grid">
       <div class="rja-contact">
         <div class="rja-icon"><i class="fas fa-phone-alt"></i></div>
-        <div><h4>Telepon</h4><a href="tel:082119395090">082119395090</a></div>
+        <div><h4>Telepon</h4><a onclick="return gtag_report_conversion('tel:082119395090');" href="tel:082119395090">082119395090</a></div>
       </div>
       <div class="rja-contact">
         <div class="rja-icon"><i class="fas fa-envelope"></i></div>
@@ -330,7 +328,7 @@ url("assets/images/backgrounds/slider-3-1.jpg") center/cover no-repeat}
   </div>
 </footer>
 
-<a class="rja-float" href="https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20tanya%20rolling%20door." onclick="return gtag_report_conversion(this.href);" aria-label="Chat WhatsApp">
+<a class="rja-float" onclick="return gtag_report_conversion('https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20tanya%20rolling%20door.');" href="https://wa.me/6282119395090?text=Halo%20Rizky%20Jaya%20Abadi,%20saya%20ingin%20tanya%20rolling%20door." aria-label="Chat WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
 
