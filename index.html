@@ -53,21 +53,25 @@
   gtag('config', 'AW-18398051610');
 </script>
 
-    <!-- Event snippet for Kontak conversion -->
-    <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18398051610/9XnTCJGS0ewcEJr678RE',
-        'event_callback': callback
-      });
-      return false;
+<!-- Event snippet for Kontak (1) conversion -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
     }
-    </script>
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18398051610/Bl_-CL3pi-0cEJr678RE',
+    'value': 1.0,
+    'currency': 'IDR',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script>
 </head>
 
 <body>
