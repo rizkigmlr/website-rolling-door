@@ -53,7 +53,8 @@
   gtag('config', 'AW-18398051610');
 </script>
 
-<!-- Event snippet for Kontak (1) conversion -->
+<!-- Event snippet for Kontak (2) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
   var callback = function () {
@@ -61,17 +62,14 @@ function gtag_report_conversion(url) {
       window.location = url;
     }
   };
-
   gtag('event', 'conversion', {
-    'send_to': 'AW-18398051610/Bl_-CL3pi-0cEJr678RE',
-    'value': 1.0,
-    'currency': 'IDR',
-    'event_callback': callback
+      'send_to': 'AW-18398051610/l58MCLfqje0cEJr678RE',
+      'event_callback': callback
   });
-
   return false;
 }
 </script>
+
 </head>
 
 <body>
